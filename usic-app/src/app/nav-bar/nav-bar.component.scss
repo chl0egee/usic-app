@@ -1,0 +1,78 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Navbar */
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Dark background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    
+    h1 {
+        flex: 1;
+        text-align: center; /* Center the 'usic' */
+        margin: 0;
+    }
+    
+    a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding-right: 10px; 
+    }
+    
+    a:hover {
+        color: #ddd; /* Light gray on hover */
+    }
+    }
+    
+    /* Sidebar */
+    aside.sidebar {
+    background-color: black; /* Black background */
+    color: white; /* White font */
+    width: 200px; /* Adjust sidebar width */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Keeps the sidebar fixed */
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center; 
+    
+    nav.sidebar {
+        ul {
+        list-style-type: none;
+    
+        li {
+            margin: 15px 0;
+            text-align: center;
+    
+            a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            display: block;
+            transition: color 0.3s;
+            //padding-right: 10px;
+    
+            &:hover {
+                color: #aaa; /* Light gray on hover */
+            }
+            }
+        }
+        }
+    }
+    }
+    
+    /* Push content away from sidebar */
+    body {
+    margin-left: 220px; /* Match the sidebar width */
+    }
+      

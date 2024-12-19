@@ -1,0 +1,6 @@
+html, body {
+    margin: 0;            /* Remove default margins */
+    padding: 0;           /* Remove default padding */
+    height: 100%;         /* Stretch to full viewport height */
+    background-color: #F5F5F5; /* Light gray-white background */
+  }

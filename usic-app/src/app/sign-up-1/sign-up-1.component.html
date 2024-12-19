@@ -1,0 +1,38 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="form-container">
+      <!-- First Name -->
+      <div class="form-field">
+        <label for="firstName">First Name: </label>
+        <input id="firstName" formControlName="firstName" type="text" placeholder="Enter your first name" required>
+      </div>  
+  
+      <!-- Last Name -->
+      <div class="form-field">
+        <label for="lastName">Last Name: </label>
+        <input id="lastName" formControlName="lastName" type="text" placeholder="Enter your last name" required>
+      </div>
+  
+      <!-- Email -->
+      <div class="form-field">
+        <label for="email">Email: </label>
+        <input id="email" formControlName="email" type="email" placeholder="Enter your email" required>
+      </div>
+  
+      <!-- Username -->
+      <div class="form-field">
+        <label for="username">Username: </label>
+        <input id="username" formControlName="username" type="text" placeholder="Enter your username" required>
+      </div>
+  
+      <!-- Password -->
+      <div class="form-field">
+        <label for="password">Password: </label>
+        <input id="password" formControlName="password" type="password" placeholder="Enter your password" required>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">
+        Submit
+      </button>
+  </form>
+  
+  <!--[disabled]="signUpForm.invalid"--> 

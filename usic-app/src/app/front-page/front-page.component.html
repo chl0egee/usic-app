@@ -1,0 +1,52 @@
+
+<!-- Main Container -->
+
+<div class="hero-container">
+
+    <!-- Action Buttons -->
+    <div class="button-container">
+        <div class = "button-wrapper">
+            <button (click)="handleLogIn()" class= "btn btn-login">Log In</button>
+            <button [routerLink]="['/sign-up/1']" class="btn btn-signup">Sign Up</button>
+        </div>
+        <!--<form *ngIf="logInClicked" class="login-form">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for ="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </form>-->
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-header">
+    <h1>Rate Music with Friends</h1>
+    <p>
+        Discover, rate, and share your favorite albums with friends. Join the
+        community of music lovers.
+    </p>
+    </header>
+
+    <!-- Features Section -->
+    <div class="features">
+    <!-- Feature Card 1 -->
+    <div class="feature-card">
+        <div class="icon">🎵</div>
+        <h3>Rate Albums</h3>
+        <p>Share your thoughts on your favorite albums with detailed ratings.</p>
+    </div>
+
+    <!-- Feature Card 2 -->
+    <div class="feature-card">
+        <div class="icon">👥</div>
+        <h3>Connect with Friends</h3>
+        <p>See what your friends are listening to and rating.</p>
+    </div>
+
+    <!-- Feature Card 3 -->
+    <div class="feature-card">
+        <div class="icon">🎶</div>
+        <h3>Discover Music</h3>
+        <p>Find new music through friends' recommendations.</p>
+        </div>
+    </div>
+</div>
